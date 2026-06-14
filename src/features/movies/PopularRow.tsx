@@ -10,12 +10,15 @@ export function PopularRow() {
   if (isError) return <p>Something went wrong.</p>;
 
   return (
-    <Swiper slidesPerView="auto" spaceBetween={16}>
-      {data.results.map((movie) => (
-        <SwiperSlide key={movie.id} className="w-40">
-          <MovieCard movie={movie} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <section className="px-4">
+      <h2 className="mb-4 text-xl font-bold">What's Popular</h2>
+      <Swiper slidesPerView="auto" spaceBetween={16} grabCursor>
+        {data.results.map((movie) => (
+          <SwiperSlide key={movie.id} className="w-40">
+            <MovieCard movie={movie} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 }

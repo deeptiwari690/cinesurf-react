@@ -2,7 +2,7 @@
 
 Discover something to watch tonight. A movie discovery app built on the TMDB API.
 
-[Live →](https://cinesurf.vercel.app)
+[View live →](https://cinesurf.vercel.app)
 
 ## Features
 

@@ -1,5 +1,10 @@
 @import "tailwindcss";
 @import "swiper/css" layer(base);
+
+@theme {
+  --color-accent: hsl(258deg 90% 66%);
+}
+
 @layer base {
   body {
     @apply bg-slate-950 text-slate-100;

@@ -1,12 +1,5 @@
-<svg viewBox="76 30 161 161" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="cs-gradient" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0D9488"/>
-      <stop offset="1" stop-color="#06B6D4"/>
-    </linearGradient>
-  </defs>
-  <path d="M186 59 A62 62 0 1 0 186 161"
-        stroke="url(#cs-gradient)" stroke-width="24" stroke-linecap="round" fill="none"/>
-  <path d="M128 110 C140 78 164 78 176 110 C188 142 212 142 224 110"
-        stroke="url(#cs-gradient)" stroke-width="24" stroke-linecap="round" fill="none"/>
+<svg viewBox="76 30 161 161"
+  xmlns="http://www.w3.org/2000/svg">
+  <path d="M186 59 A62 62 0 1 0 186 161" stroke="hsl(258deg 90% 66%)" stroke-width="24" stroke-linecap="round" fill="none"/>
+  <path d="M128 110 C140 78 164 78 176 110 C188 142 212 142 224 110" stroke="hsl(258deg 90% 66%)" stroke-width="24" stroke-linecap="round" fill="none"/>
 </svg>

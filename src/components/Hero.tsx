@@ -14,7 +14,7 @@ export function Hero() {
           required
           autoComplete="off"
           placeholder='Try "Interstellar"...'
-          className="w-full rounded-full bg-slate-800 py-3 pl-10 pr-4 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent"
+          className="w-full rounded-full border border-white/12 bg-slate-800 py-3 pl-10 pr-4 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent"
         />
       </Form>
     </section>

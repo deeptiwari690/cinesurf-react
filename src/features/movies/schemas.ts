@@ -9,6 +9,8 @@ export const movieSummarySchema = z.object({
   genre_ids: z.array(z.number()),
 });
 
+export type MovieSummary = z.infer<typeof movieSummarySchema>;
+
 export const movieListSchema = z.object({
   page: z.number(),
   results: z.array(movieSummarySchema),

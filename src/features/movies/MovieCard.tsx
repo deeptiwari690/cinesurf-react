@@ -15,9 +15,10 @@ export function MovieCard({ movie }: { movie: MovieSummary }) {
           <ImageOff className="text-gray-400" />
         </div>
       )}
-
-      <h3 className="mt-2 line-clamp-2 font-bold">{title}</h3>
-      <p className="text-sm text-gray-500">{formatDate(release_date)}</p>
+      <div className="select-text cursor-text swiper-no-swiping">
+        <h3 className="mt-2 line-clamp-2 font-bold">{title}</h3>
+        <p className="text-sm text-gray-500">{formatDate(release_date)}</p>
+      </div>
     </article>
   );
 }

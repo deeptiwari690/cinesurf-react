@@ -12,7 +12,7 @@ export function PopularRow() {
   return (
     <section>
       <h2 className="mb-4 text-xl font-bold">What's Popular</h2>
-      <Swiper slidesPerView="auto" spaceBetween={16} grabCursor>
+      <Swiper slidesPerView="auto" spaceBetween={16} grabCursor className="select-none">
         {data.results.map((movie) => (
           <SwiperSlide key={movie.id} className="w-40">
             <MovieCard movie={movie} />

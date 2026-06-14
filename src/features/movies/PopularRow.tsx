@@ -10,7 +10,7 @@ export function PopularRow() {
   if (isError) return <p>Something went wrong.</p>;
 
   return (
-    <section className="px-4">
+    <section>
       <h2 className="mb-4 text-xl font-bold">What's Popular</h2>
       <Swiper slidesPerView="auto" spaceBetween={16} grabCursor>
         {data.results.map((movie) => (

@@ -14,7 +14,7 @@ export function SearchResults() {
   nextParams.set("page", String(page + 1));
 
   return (
-    <main className="px-4">
+    <main>
       <h1 className="mb-4 text-xl font-bold">Results for "{query}"</h1>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {data.results.map((movie) => (

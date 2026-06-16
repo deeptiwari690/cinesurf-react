@@ -12,7 +12,7 @@ export function PopularRow() {
 
   return (
     <section>
-      <h2 className="mb-4 text-xl font-bold">What's Popular</h2>
+      <h2 className="mbe-4 text-xl font-bold">What's Popular</h2>
       <Swiper
         slidesPerView="auto"
         grabCursor
@@ -21,7 +21,7 @@ export function PopularRow() {
         freeMode={{ enabled: true, momentumRatio: 0.5 }}
       >
         {data.results.map((movie) => (
-          <SwiperSlide key={movie.id} className="w-44 pr-4 last:w-40 last:pr-0">
+          <SwiperSlide key={movie.id} className="w-44 pe-4 last:w-40 last:pe-0">
             <MovieCard movie={movie} />
           </SwiperSlide>
         ))}

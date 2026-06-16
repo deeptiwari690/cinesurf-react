@@ -15,13 +15,13 @@ export function SearchResults() {
 
   return (
     <main>
-      <h1 className="mb-4 text-xl font-bold">Results for "{query}"</h1>
+      <h1 className="mbe-4 text-xl font-bold">Results for "{query}"</h1>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {data.results.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
       </div>
-      <div className="mt-6 flex items-center justify-center gap-4">
+      <div className="mbs-6 flex items-center justify-center gap-4">
         {page > 1 && (
           <Link to={`?${prevParams}`} className="rounded-md bg-slate-800 px-4 py-2 transition hover:brightness-110">
             Previous

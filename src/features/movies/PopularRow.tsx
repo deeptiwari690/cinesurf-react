@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { popularMoviesQuery } from "./queries";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper/modules";
 import { MovieCard } from "./MovieCard";
 
 export function PopularRow() {
@@ -12,7 +13,7 @@ export function PopularRow() {
   return (
     <section>
       <h2 className="mb-4 text-xl font-bold">What's Popular</h2>
-      <Swiper slidesPerView="auto" grabCursor className="select-none">
+      <Swiper slidesPerView="auto" grabCursor className="select-none" modules={[FreeMode]} freeMode>
         {data.results.map((movie) => (
           <SwiperSlide key={movie.id} className="w-44 pr-4 last:w-40 last:pr-0">
             <MovieCard movie={movie} />

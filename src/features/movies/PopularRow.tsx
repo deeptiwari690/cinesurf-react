@@ -1,14 +1,11 @@
-import { useQuery } from "@tanstack/react-query";
+import { useSuspenseQuery } from "@tanstack/react-query";
 import { popularMoviesQuery } from "./queries";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
 import { MovieCard } from "./MovieCard";
 
 export function PopularRow() {
-  const { data, isPending, isError } = useQuery(popularMoviesQuery);
-
-  if (isPending) return <p>Loading...</p>;
-  if (isError) return <p>Something went wrong.</p>;
+  const { data } = useSuspenseQuery(popularMoviesQuery);
 
   return (
     <section>

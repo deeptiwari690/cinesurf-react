@@ -14,7 +14,7 @@ export async function tmdb<S extends z.ZodType>(
   }
   const response = await fetch(url, { signal });
   if (!response.ok) {
-    throw new Error(`TMDB request failed: ${response.status} ${path}`);
+    throw new Error(`TMDB request failed: ${response.status} ${url}`);
   }
   const rawData = await response.json();
   return schema.parse(rawData);

@@ -5,8 +5,8 @@ const BASE_URL = "https://cinesurf-tmdb-proxy.vercel.app/api/tmdb";
 export async function tmdb<S extends z.ZodType>(
   path: string,
   schema: S,
+  signal: AbortSignal,
   searchParams?: Record<string, string>,
-  signal?: AbortSignal,
 ): Promise<z.infer<S>> {
   const url = new URL(BASE_URL + path);
   if (searchParams) {

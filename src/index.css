@@ -10,3 +10,7 @@
     @apply bg-slate-950 text-slate-100;
   }
 }
+
+#nprogress .bar {
+  background: var(--color-accent) !important;
+}

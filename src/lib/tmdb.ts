@@ -8,7 +8,7 @@ export async function tmdb<S extends z.ZodType>(
   signal: AbortSignal,
   searchParams?: Record<string, string>,
 ): Promise<z.infer<S>> {
-  const url = new URL(BASE_URL + path);
+  const url = new URL(`${BASE_URL}${path}`);
   if (searchParams) {
     url.search = new URLSearchParams(searchParams).toString();
   }
